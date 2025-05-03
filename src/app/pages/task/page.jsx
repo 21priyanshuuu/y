@@ -1,4 +1,5 @@
 "use client";
+import { LogoutLink } from "@kinde-oss/kinde-auth-nextjs";
 
 import { useState, useEffect } from "react";
 import axios from "axios";
@@ -54,7 +55,8 @@ export default function TaskPage() {
   return (
     <div className="max-w-2xl mx-auto p-4 bg-white">
       <h1 className="text-xl font-normal mb-4 text-gray-800">Task Manager</h1>
-
+      <button >
+<LogoutLink>Logout</LogoutLink></button>
       <div className="mb-6 border border-gray-200 p-4 rounded">
         <form onSubmit={handleSubmit} className="space-y-2">
           <input
